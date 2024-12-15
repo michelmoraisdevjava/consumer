@@ -1,4 +1,4 @@
-//Interface implementation
+//Reference method with static method
 package application;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class Program {
 		list.add(new Product("Tablet", 350.50));
 		list.add(new Product("HD Case", 80.90));
 		
-		list.forEach(new ConsumerProduct());
+		list.forEach(Product::staticConsumerProoduct);
 		
 		list.forEach(System.out::println);
 
